@@ -3,7 +3,7 @@
 	Plugin Name: MouseWheel Smooth Scroll
 	Plugin URI: http://kubiq.sk
 	Description: MouseWheel smooth scrolling for your WordPress website
-	Version: 1.0
+	Version: 1.0.1
 	Author: Jakub Novák
 	Author URI: http://kubiq.sk
 */
@@ -55,8 +55,8 @@ if (!class_exists('wpmss')) {
 			wp_enqueue_script( 'wpmss_jquery_mousewheel', plugins_url( 'js/jquery.mousewheel.min.js' , __FILE__ ));
 			wp_enqueue_script( 'wpmss_jquery_easing', plugins_url( 'js/jquery.easing.1.3.js' , __FILE__ ));
 			$options = array(
-				'step' => isset( $this->settings['general']['step'] ) ? $this->settings['general']['step'] : 55,
-				'speed' => isset( $this->settings['general']['speed'] ) ? $this->settings['general']['speed'] : 400,
+				'step' => isset( $this->settings['general']['step'] ) && trim( $this->settings['general']['step'] ) != "" ? $this->settings['general']['step'] : 55,
+				'speed' => isset( $this->settings['general']['speed'] ) && trim( $this->settings['general']['step'] ) != "" ? $this->settings['general']['speed'] : 400,
 				'ease' => isset( $this->settings['general']['ease'] ) ? $this->settings['general']['ease'] : 'easeOutCubic',
 				'enableAll' => isset( $this->settings['general']['enable_mac'] ) ? 1 : 0
 			);
