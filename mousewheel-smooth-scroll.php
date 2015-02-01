@@ -3,7 +3,7 @@
 	Plugin Name: MouseWheel Smooth Scroll
 	Plugin URI: http://kubiq.sk
 	Description: MouseWheel smooth scrolling for your WordPress website
-	Version: 1.0.1
+	Version: 1.0.2
 	Author: Jakub Novák
 	Author URI: http://kubiq.sk
 */
@@ -55,8 +55,8 @@ if (!class_exists('wpmss')) {
 			wp_enqueue_script( 'wpmss_jquery_mousewheel', plugins_url( 'js/jquery.mousewheel.min.js' , __FILE__ ));
 			wp_enqueue_script( 'wpmss_jquery_easing', plugins_url( 'js/jquery.easing.1.3.js' , __FILE__ ));
 			$options = array(
-				'step' => isset( $this->settings['general']['step'] ) && trim( $this->settings['general']['step'] ) != "" ? $this->settings['general']['step'] : 55,
-				'speed' => isset( $this->settings['general']['speed'] ) && trim( $this->settings['general']['step'] ) != "" ? $this->settings['general']['speed'] : 400,
+				'step' => isset( $this->settings['general']['step'] ) && trim( $this->settings['general']['step'] ) != "" ? $this->settings['general']['step'] : 120,
+				'speed' => isset( $this->settings['general']['speed'] ) && trim( $this->settings['general']['step'] ) != "" ? $this->settings['general']['speed'] : 800,
 				'ease' => isset( $this->settings['general']['ease'] ) ? $this->settings['general']['ease'] : 'easeOutCubic',
 				'enableAll' => isset( $this->settings['general']['enable_mac'] ) ? 1 : 0
 			);
@@ -106,7 +106,7 @@ if (!class_exists('wpmss')) {
 						<label for="q_field_1"><?php _e("Step:", $this->domain) ?></label> 
 					</th>
 					<td>
-						<input type="text" name="step" placeholder="55" value="<?php echo $this->settings[ $this->tab ]["step"]; ?>" id="q_field_1">
+						<input type="text" name="step" placeholder="120" value="<?php echo $this->settings[ $this->tab ]["step"]; ?>" id="q_field_1">
 					</td>
 				</tr>
 				<tr>
@@ -114,7 +114,7 @@ if (!class_exists('wpmss')) {
 						<label for="q_field_2"><?php _e("Speed:", $this->domain) ?></label> 
 					</th>
 					<td>
-						<input type="text" name="speed" placeholder="400" value="<?php echo $this->settings[ $this->tab ]["speed"]; ?>" id="q_field_2">
+						<input type="text" name="speed" placeholder="800" value="<?php echo $this->settings[ $this->tab ]["speed"]; ?>" id="q_field_2">
 					</td>
 				</tr>
 				<tr>
