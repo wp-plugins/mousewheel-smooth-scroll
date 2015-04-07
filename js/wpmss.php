@@ -11,7 +11,7 @@ function MouseSmoothScroll(){
 		step: <?php echo $_GET['step'] ?>,
 		speed: <?php echo $_GET['speed'] ?>,
 		ease: '<?php echo $_GET['ease'] ?>',
-		target: $('body'),
-		container: $(window)
+		target: jQuery('body'),
+		container: jQuery(window)
 	});
 }
