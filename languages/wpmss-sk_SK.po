@@ -1,0 +1,139 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woocommerce-heureka\n"
+"POT-Creation-Date: 2015-01-07 14:33+0100\n"
+"PO-Revision-Date: 2015-01-07 14:34+0100\n"
+"Last-Translator: Ing. Jakub Novák <info@kubiq.sk>\n"
+"Language-Team: KubiQ <info@kubiq.sk>\n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ./..\n"
+
+#: ../mousewheel-smooth-scroll.php:31
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: ../mousewheel-smooth-scroll.php:39 ../mousewheel-smooth-scroll.php:40
+#: ../mousewheel-smooth-scroll.php:85
+msgid "MouseWheel Smooth Scroll"
+msgstr "MouseWheel Smooth Scroll"
+
+#: ../mousewheel-smooth-scroll.php:68
+msgid "General"
+msgstr "Všeobecné"
+
+#: ../mousewheel-smooth-scroll.php:68
+msgid "Help"
+msgstr "Pomoc"
+
+#: ../mousewheel-smooth-scroll.php:86
+msgid "Settings saved."
+msgstr "Nastavenia boli uložené."
+
+#: ../mousewheel-smooth-scroll.php:106
+msgid "Step:"
+msgstr "Krok:"
+
+#: ../mousewheel-smooth-scroll.php:114
+msgid "Speed:"
+msgstr "Rýchlosť:"
+
+#: ../mousewheel-smooth-scroll.php:122
+msgid "Ease:"
+msgstr "Animácia:"
+
+#: ../mousewheel-smooth-scroll.php:163
+msgid "try easings"
+msgstr "pozrieť animácie"
+
+#: ../mousewheel-smooth-scroll.php:168
+msgid "Enable for MAC and non-WebKit browsers (experimental)"
+msgstr "Povoliť pre Mac a prehliadače, ktoré nemajú WebKit (experiment)"
+
+#: ../mousewheel-smooth-scroll.php:175
+msgid "Save"
+msgstr "Uložiť"
+
+#: ../mousewheel-smooth-scroll.php:179
+msgid "Any ideas, problems, issues?"
+msgstr "Objavili ste chybu, máte nejaký problém alebo otázky k tomuto pluginu?"
+
+#~ msgid "Enable mousewheel smooth scroll"
+#~ msgstr "Povoliť plugin"
+
+#~ msgid "HTML5 History"
+#~ msgstr "HTML5 History"
+
+#~ msgid "Element with content:"
+#~ msgstr "Element s obsahom"
+
+#~ msgid "Your settings have been saved."
+#~ msgstr "Vaše nastavenia boli uložené."
+
+#~ msgid "Heureka export"
+#~ msgstr "Heureka export"
+
+#~ msgid "Categories"
+#~ msgstr "Kategórie"
+
+#~ msgid "Shipping"
+#~ msgstr "Doprava"
+
+#~ msgid "Heureka XML export"
+#~ msgstr "Heureka XML export"
+
+#~ msgid "Product in stock is delivered in X days:"
+#~ msgstr "Ak je produkt skladom, dodanie trvá (dni):"
+
+#~ msgid "Product out of stock is delivered in X days:"
+#~ msgstr "Ak produkt nie je skladom, dodanie trvá (dni):"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Výrobca"
+
+#~ msgid "This is attribute where manufacturer is stored"
+#~ msgstr "Táto vlastnosť je výrobca produktu"
+
+#~ msgid "Add manufacturer at the beginning of product name in XML export"
+#~ msgstr "Pridať výrobcu pred názov produtku v exporte do XML"
+
+#~ msgid "Attributes"
+#~ msgstr "Vlastnosti"
+
+#~ msgid "Attributes to display in export"
+#~ msgstr "Vlastnosti zobrazené v exporte"
+
+#~ msgid "Category"
+#~ msgstr "Kategória"
+
+#~ msgid "Price per click"
+#~ msgstr "Cena za preklik"
+
+#~ msgid "Shipping method"
+#~ msgstr "Spôsob dopravy"
+
+#~ msgid "Price"
+#~ msgstr "Cena"
+
+#~ msgid "Price COD"
+#~ msgstr "Cena na dobierku"
+
+#~ msgid "XML export for Heureka.sk:"
+#~ msgstr "XML export pre Heureka.sk:"
+
+#~ msgid "Settings saved succesfully"
+#~ msgstr "Nastavenia boli úspešne uložené"
+
+#~ msgid "Advanced"
+#~ msgstr "Pokročilé"
+
+#~ msgid "OSCommerce Database Settings"
+#~ msgstr "OSCommerce Database Settings"
