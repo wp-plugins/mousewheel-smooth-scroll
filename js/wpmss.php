@@ -10,6 +10,8 @@ function MouseSmoothScroll(){
 	jQuery.srSmoothscroll({
 		step: <?php echo $_GET['step'] ?>,
 		speed: <?php echo $_GET['speed'] ?>,
-		ease: '<?php echo $_GET['ease'] ?>'
+		ease: '<?php echo $_GET['ease'] ?>',
+		target: jQuery('body'),
+		container: jQuery(window)
 	});
 }
