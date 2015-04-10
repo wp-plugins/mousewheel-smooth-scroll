@@ -4,7 +4,7 @@ Donate link: http://kubiq.sk
 Tags: smooth scroll, mousewheel scroll, scrolling
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Smooth scrolling experience, with mousewheel or touchpad
 
 == Description ==
 
-Replace basic scrolling "efect" on Windows, Linux and some browsers with nice smooth scroll
+Replace basic scrolling "effect" on Windows, Linux and some browsers with nice smooth scroll
 
 <ul>
 	<li>set speed</li>
@@ -44,3 +44,6 @@ Replace basic scrolling "efect" on Windows, Linux and some browsers with nice sm
 
 = 1.0.3 =
 * Update scroll script
+
+= 1.0.4 =
+* Remove some script

@@ -3,7 +3,7 @@
 	Plugin Name: MouseWheel Smooth Scroll
 	Plugin URI: http://kubiq.sk
 	Description: MouseWheel smooth scrolling for your WordPress website
-	Version: 1.0.3
+	Version: 1.0.4
 	Author: Jakub Novák
 	Author URI: http://kubiq.sk
 */
@@ -51,7 +51,6 @@ if (!class_exists('wpmss')) {
 		}
 
 		function plugin_scripts_load() {
-			wp_enqueue_script( 'wpmss_jquery_browser', plugins_url( 'js/jquery.browser.min.js' , __FILE__ ));
 			wp_enqueue_script( 'wpmss_jquery_mousewheel', plugins_url( 'js/jquery.mousewheel.min.js' , __FILE__ ));
 			wp_enqueue_script( 'wpmss_jquery_easing', plugins_url( 'js/jquery.easing.1.3.js' , __FILE__ ));
 			$options = array(
@@ -179,7 +178,7 @@ if (!class_exists('wpmss')) {
 			<p><?php _e('Any ideas, problems, issues?', $this->domain) ?></p>
 			<p>Ing. Jakub Novák</p>
 			<p><a href="mailto:info@kubiq.sk" target="_blank">info@kubiq.sk</a></p>
-			<p><a href="https://kubiq.sk/" target="_blank">https://kubiq.sk</a></p><?php
+			<p><a href="http://kubiq.sk/" target="_blank">http://kubiq.sk</a></p><?php
 		}
 
 		function q_select( $field_data = array(), $print = 1 ){
