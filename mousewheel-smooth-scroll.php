@@ -3,7 +3,7 @@
 	Plugin Name: MouseWheel Smooth Scroll
 	Plugin URI: http://kubiq.sk
 	Description: MouseWheel smooth scrolling for your WordPress website
-	Version: 1.0.4
+	Version: 1.1
 	Author: Jakub Novák
 	Author URI: http://kubiq.sk
 */
@@ -18,12 +18,9 @@ if (!class_exists('wpmss')) {
 		function wpmss_func(){ $this->__construct(); }	
 		
 		function __construct(){
-			// translating strings
 			$mo = plugin_dir_path(__FILE__) . 'languages/' . $this->domain . '-' . get_locale() . '.mo';
 			load_textdomain($this->domain, $mo);
-			// add plugin to menu
 			add_action( 'admin_menu', array( &$this, 'plugin_menu_link' ) );
-			// action on plugin initializing
 			add_action( 'init', array( &$this, "plugin_init" ) );
 		}
 		
@@ -73,13 +70,10 @@ if (!class_exists('wpmss')) {
 		}
 
 		function admin_options_page() {
-			// check if this is plugin admin page
 			if ( get_current_screen()->id != $this->plugin_admin_page ) return;
-			// get current tab
 			$this->tab = ( isset( $_GET['tab'] ) ) ? $_GET['tab'] : 'general';
 			if(isset($_POST['plugin_sent'])) $this->settings[ $this->tab ] = $_POST;
-			update_option( "wpmss_settings", $this->settings );
-			// display content ?>
+			update_option( "wpmss_settings", $this->settings ); ?>
 			<div class="wrap">
 				<h2><?php _e( 'MouseWheel Smooth Scroll', $this->domain ); ?></h2>
 				<?php if(isset($_POST['plugin_sent'])) echo '<div id="message" class="below-h2 updated"><p>'.__( 'Settings saved.' ).'</p></div>'; ?>
