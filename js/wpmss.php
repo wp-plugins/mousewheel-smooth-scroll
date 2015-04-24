@@ -3,9 +3,9 @@ jQuery(document).ready(function($) {
 });
 
 function MouseSmoothScroll(){
-	<?php if ( $_GET['enableAll'] == 0 ): ?>	
-	if( jQuery.browser.mac ) return false;
-	if( ! jQuery.browser.webkit ) return false;
+	<?php if ( $_GET['enableAll'] == 0 ): ?>
+	isMac = /(mac)/.exec( window.navigator.userAgent.toLowerCase() );
+	if( isMac != null && isMac.length ) return false;
 	<?php endif ?>
 	jQuery.srSmoothscroll({
 		step: <?php echo $_GET['step'] ?>,
